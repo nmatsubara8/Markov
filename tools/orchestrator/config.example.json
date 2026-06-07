@@ -1,0 +1,32 @@
+{
+  "terminal_path": "C:\\Program Files\\MetaTrader 5\\terminal64.exe",
+  "expert": "Markov\\MarkovBacktestEA.ex5",
+  "symbols": ["EURUSD", "USDJPY", "GBPUSD", "AUDUSD"],
+  "period": "D1",
+  "from_date": "2015.01.01",
+  "to_date": "2024.12.31",
+  "optimization": 2,
+  "model": 1,
+  "criterion": 6,
+  "forward_mode": 0,
+  "deposit": 10000,
+  "currency": "USD",
+  "leverage": 100,
+  "timeout_sec": 7200,
+  "ini_dir": "ini_out",
+  "inputs": {
+    "InpTimeframe": "PERIOD_D1",
+    "InpReturnWindow": { "start": 10, "step": 5, "stop": 30, "optimize": true },
+    "InpStdWindow": { "start": 60, "step": 20, "stop": 140, "optimize": true },
+    "InpSigmaThreshold": { "start": 0.3, "step": 0.1, "stop": 0.9, "optimize": true },
+    "InpTrainLookback": { "start": 300, "step": 100, "stop": 700, "optimize": true },
+    "InpForecastSteps": { "start": 1, "step": 1, "stop": 3, "optimize": true },
+    "InpDiffThreshold": { "start": 0.05, "step": 0.05, "stop": 0.25, "optimize": true },
+    "InpLaplaceAlpha": 1.0,
+    "InpBaseRiskPct": 0.5,
+    "InpMaxRiskPct": 2.0,
+    "InpAtrPeriod": 14,
+    "InpAtrSLMult": { "start": 1.0, "step": 0.5, "stop": 3.0, "optimize": true },
+    "InpEntryMode": 0
+  }
+}
