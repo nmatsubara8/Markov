@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# MQL5 build artifacts
+*.ex5
+*.ex4
+
+# Orchestrator output
+tools/orchestrator/ini_out/
+*.sqlite
+*.sqlite-journal
+
+# OS / editor
+.DS_Store
+Thumbs.db
